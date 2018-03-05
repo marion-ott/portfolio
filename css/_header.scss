@@ -1,0 +1,46 @@
+// .header {
+//   font-family: 'OpenSans';
+//   text-align: center;
+//   padding: 6rem 0;
+//   background: #EAEAEA;
+//   font-weight: 300;
+//   &-title {
+//     font-size: 2.4rem;
+//     @include for-size(tablet-portrait-up) {
+//       font-size: 3rem;
+//     }
+//   }
+//   &-subTitle {
+//     font-size: 1.8rem;
+//     @include for-size(tablet-portrait-up) {
+//       font-size: 3rem;
+//     }
+//   }
+// }
+.header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  &__logo {
+    width: 30px;
+    height: 30px;
+    background-color: $black;
+  }
+  &__navigation {
+    width: 20%;
+    text-align: right;
+  }
+  &__navigationItem {
+    list-style-type: none;
+  }
+  &__navigationItemLink {
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
