@@ -34,6 +34,31 @@
 }
 
 @font-face {
+    font-family: 'Harriet Display';
+    src: url('HarrietDisplay-Black.woff2') format('woff2'),
+        url('HarrietDisplay-Black.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harriet Display';
+    src: url('HarrietDisplay-Medium.woff2') format('woff2'),
+        url('HarrietDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harriet Display';
+    src: url('HarrietDisplay-Bold.woff2') format('woff2'),
+        url('HarrietDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Playfair';
     src: url(../fonts/PlayfairDisplay-Regular.otf) format("truetype");
     font-weight: 300;
