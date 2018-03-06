@@ -25,6 +25,9 @@ body {
     padding: 0.4em 1em 0.2em 0.4em;
     display: inline-block;
   }
+  &__title1::selection {
+    background: none;
+  }
   &__title2 {
     font-family: 'Playfair';
     font-size: 70px;
@@ -32,8 +35,11 @@ body {
     letter-spacing: 3px;
     color: $white;
     background-color: $black;
-    padding: 0.1em 1em 0.3em 0.2em;
+    padding: 0.1em 0.6em 0.3em 0.2em;
     display: inline-block;
+  }
+  &__title2::selection {
+    background: none;
   }
   &__text {
     font-family: 'Playfair';
@@ -68,6 +74,7 @@ body {
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.2px;
+    display: inline-block;
   }
   &__scrollBar {
     width: 1px;
@@ -77,18 +84,30 @@ body {
     margin-top: 0.8em;
   }
 }
+.scrollEvolution {
+  display: none;
+  &__items {
+    background-color: $yellow;
+    height: 25px;
+    width: 6px;
+    margin-bottom: 1.7em;
+  }
+}
+.selection::selection {
+  background: $yellow;
+}
 
 .secondSection {
   margin: 0 auto;
   &__projectContainer {
-    margin-top: 14em;
+    margin-top: 8em;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
   &__projectTextContainer {
     width: 50%;
-    margin-top: 5em;
+    //margin-top: 5em;
   }
   &__projectTitleContainer {
     position: relative;
@@ -113,6 +132,9 @@ body {
     left: 27;
     z-index: -1;
   }
+  &__projectNumber::selection {
+    background: none;
+  }
   &__projectTitle {
     font-family: 'Playfair';
     font-size: 40px;
@@ -123,6 +145,9 @@ body {
     line-height: 20px;
     padding: 0.3em 0.8em 0 0.3em;
     //margin-left: 1em;
+  }
+  &__projectTitle::selection {
+    background: none;
   }
   &__projectRole {
     font-family: 'OpenSans', sans-serif;
@@ -142,9 +167,16 @@ body {
     line-height: 23px;
   }
   &__projectImgContainer {
-    //width: 50%;
+    position: relative;
   }
   &__projectImg {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   }
+  &__projectLinkContainer {
+    position: absolute;
+    display: none;
+  }
+}
+.secondSection__projectTextContainer1 {
+  margin-left: 4em;
 }

@@ -21,6 +21,9 @@
     line-height: 50px;
     margin-bottom: 50px;
   }
+  &__title::selection {
+    background: none;
+  }
   &__CTA {
     font-weight: 600;
     font-size: 40px;
@@ -45,11 +48,19 @@
     line-height: 8px;
     padding: 10px 25px 0 6px;
   }
-  &__socialIcons {
-    display: flex;
-    justify-content: space-between;
+  &__externalLinks::selection {
+    background: none;
+  }
+  &__socialItems {
     width: 30%;
     margin-top: 40px;
     margin-left: 9px;
+  }
+  &__socialLink {
+    text-decoration: none;
+    color: $black;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.5em;
   }
 }

@@ -9,7 +9,6 @@
 <body>
 <div class="container">
   <header class="header">
-
       <div class="header__logo"></div>
       <nav class="header__navigation">
         <li class="header__navigationItem">
@@ -17,6 +16,12 @@
         </li>
       </nav>
   </header>
+  <div class="scrollEvolution">
+    <div class="scrollEvolution__items"></div>
+    <div class="scrollEvolution__items"></div>
+    <div class="scrollEvolution__items"></div>
+    <div class="scrollEvolution__items"></div>
+  </div>
   <section class="firstSection">
     <div class="firstSection__content">
       <div>
@@ -25,7 +30,7 @@
       <div>
         <h1 class="firstSection__title2">Marion Ott.</h1>
       </div>
-      <p class="firstSection__text">I'm a 27 years old front-end developper.
+      <p class="firstSection__text selection">I'm a 27 years old front-end developper.
       Currently enrolled in a Bachelor Web @Hetic (Paris, France), I am looking for
       an intership starting in July 2018 (3-months period). Have a look at a selection
       of my projects, and feel free to drop me a message to get more information.</p>
@@ -45,8 +50,8 @@
           <h2 class="secondSection__projectNumber">01</h2>
           <h1 class="secondSection__projectTitle">Nespresso</h1>
         </div>
-        <h3 class="secondSection__projectRole">Designer & Front-End developper</h3>
-        <p class="secondSection__projectDescription">Lorem ipsum dolor sit amet,
+        <h3 class="secondSection__projectRole selection">Designer & Front-End developper</h3>
+        <p class="secondSection__projectDescription selection">Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -57,23 +62,76 @@
       <div class="secondSection__projectImgContainer">
         <img class="secondSection__projectImg" src="img/IMG.png" alt="">
       </div>
+      <div class="secondSection__projectLinkContainer">
+        <a href="" class="secondSection__projectLinkItem">→</a>
+      </div>
     </div>
   </section>
+
+  <section class="secondSection">
+    <div class="secondSection__projectContainer">
+      <div class="secondSection__projectImgContainer">
+        <img class="secondSection__projectImg" src="img/IMG.png" alt="">
+      </div>
+      <div class="secondSection__projectLinkContainer">
+        <a href="" class="secondSection__projectLinkItem">→</a>
+      </div>
+      <div class="secondSection__projectTextContainer1">
+        <div class="secondSection__projectTitleContainer">
+          <h2 class="secondSection__projectNumber">02</h2>
+          <h1 class="secondSection__projectTitle">Grabber</h1>
+        </div>
+        <h3 class="secondSection__projectRole selection">Designer & Front-End developper</h3>
+        <p class="secondSection__projectDescription selection">Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="footer__divider"></div>
     <div class="footer__container">
       <div class="footer__leftSection">
         <h3 class="footer__title">Convinced?</br>Then get in touch! ✌️</h3>
-        <a class="footer__CTA" href="">Say something</a>
+        <a class="footer__CTA" href="">Say hello</a>
       </div>
       <div class="footer__rightSection">
         <p class="footer__externalLinks">External links</p>
-        <div class="footer__socialIcons">
-          <a href="#github" class="footer__githubIconLink"><img src="img/GITHUB-ICON.png" alt="" class="footer__githubIcon"></a>
-          <a href="#linkedin" class="footer__linkedinIconLink"><img src="img/linkedin_icon.png" alt="" class="footer__linkedinIcon"></a>
+        <div class="footer__socialItems">
+          <a href="#github" class="footer__socialLink">GitHub</a>
+          <a href="#linkedin" class="footer__socialLink">LinkedIn</a>
         </div>
     </div>
 </div>
   </footer>
 </body>
+
+<script type="text/javascript">
+  var scrollAction = document.querySelector('.firstSection__scrollMessage');
+  var scrollBar = document.querySelector('.firstSection__scrollBar');
+  var image = document.querySelector('img');
+  var text = document.querySelector('.secondSection__projectTextContainer');
+
+  window.addEventListener('scroll', function(event) {
+    var positionScroll = window.scrollY * (-0.09);
+    scrollAction.style.transform = 'translateY('+positionScroll+'px)';
+    var positionScrollBar = window.scrollY * (-0.08);
+    scrollBar.style.transform = 'translateY('+positionScrollBar+'px)';
+  });
+
+  window.addEventListener('scroll', function (event) {
+  if ((image.offsetTop - window.innerHeight) < window.scrollY) {
+    var positionImg = window.scrollY * (-0.06);
+    image.style.transform = 'translateY('+positionImg+'px)';
+    var positionTxt = window.scrollY * (0.03);
+    text.style.transform = 'translateY('+positionTxt+'px)';
+  }
+  });
+</script>
 </html>
