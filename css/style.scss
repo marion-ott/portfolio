@@ -2,6 +2,7 @@
 @import "fonts";
 @import "variables";
 @import "header";
+@import "footer";
 
 body {
   background-color: $backgroundColor;
@@ -11,19 +12,17 @@ body {
 }
 
 .firstSection {
-  width: 85%;
   margin: 0 auto;
   &__content {
     text-align: left;
-    //margin-left: 150px;
-    margin-top: 120px;
+    margin-top: 7em;
   }
   &__title1 {
     font-size: 40px;
     font-weight: 300;
     color: $white;
     background-color: $black;
-    padding: 10px 40px 10px 20px;
+    padding: 0.4em 1em 0.2em 0.4em;
     display: inline-block;
   }
   &__title2 {
@@ -33,20 +32,20 @@ body {
     letter-spacing: 3px;
     color: $white;
     background-color: $black;
-    padding: 10px 40px 10px 20px;
+    padding: 0.1em 1em 0.3em 0.2em;
     display: inline-block;
   }
   &__text {
     font-family: 'Playfair';
     font-size: 17px;
     font-weight: 300;
-    margin-top: 30px;
+    margin-top: 2em;
     line-height: 28px;
     letter-spacing: 0.3px;
-    width: 80%;
+    width: 60%;
   }
   &__CTA {
-    margin-top: 50px;
+    margin-top: 3.6em;
   }
   &__CTAlink {
     background-color: $black;
@@ -56,12 +55,12 @@ body {
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 8px 25px;
+    padding: 0.6em 2em;
     text-decoration: none;
   }
   &__scrollContainer {
     text-align: center;
-    margin-top: 130px;
+    margin-top: 5em;
   }
   &__scrollMessage {
     font-family: 'OpenSans', sans-serif;
@@ -75,28 +74,44 @@ body {
     height: 25px;
     background-color: $black;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 0.8em;
   }
 }
 
 .secondSection {
-  width: 85%;
   margin: 0 auto;
   &__projectContainer {
-    margin-top: 150px;
+    margin-top: 14em;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
   &__projectTextContainer {
     width: 50%;
+    margin-top: 5em;
+  }
+  &__projectTitleContainer {
+    position: relative;
+    left: -12.5;
   }
   &__projectNumber {
     font-family: 'Playfair';
-    font-size: 60px;
+    font-size: 55px;
     color: $yellow;
     text-align: left;
-    display: none;
+    margin-bottom: 0.1em;
+    position: relative;
+    margin-left: -0.7em;
+  }
+  &__projectNumber:after {
+    content: '';
+    border: solid 1px $black;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: -12;
+    left: 27;
+    z-index: -1;
   }
   &__projectTitle {
     font-family: 'Playfair';
@@ -106,8 +121,8 @@ body {
     background-color: $yellow;
     display: inline-block;
     line-height: 20px;
-    padding: 10px 30px 0 10px;
-    margin-top: 150px;
+    padding: 0.3em 0.8em 0 0.3em;
+    //margin-left: 1em;
   }
   &__projectRole {
     font-family: 'OpenSans', sans-serif;
@@ -115,7 +130,7 @@ body {
     font-size: 16px;
     font-weight: 200;
     letter-spacing: 0.3px;
-    margin-top: 25px;
+    margin-top: 1.6em;
     color: #898989;
   }
   &__projectDescription {
@@ -127,68 +142,9 @@ body {
     line-height: 23px;
   }
   &__projectImgContainer {
-    width: 60%;
+    //width: 50%;
   }
   &__projectImg {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-  }
-}
-
-
-/* FOOTER */
-.footer {
-  width: 85%;
-  margin: 0 auto;
-  &__divider {
-    width: 500px;
-    height: 3px;
-    background-color: $black;
-    margin-top: 200px;
-  }
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__leftSection {
-    width: 50%;
-    text-align: left;
-    margin-top: 70px;
-  }
-  &__title {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 50px;
-  }
-  &__CTA {
-    font-weight: 600;
-    font-size: 40px;
-    text-transform: uppercase;
-    color: $black;
-    text-decoration: none;
-    background-color: $yellow;
-    padding: 10px 20px;
-  }
-  &__rightSection {
-    width: 25%;
-    text-align: left;
-    margin-top: 70px;
-  }
-  &__externalLinks {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-    background-color: $yellow;
-    display: inline-block;
-    line-height: 8px;
-    padding: 10px 25px 0 6px;
-  }
-  &__socialIcons {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    margin-top: 40px;
-    margin-left: 9px;
   }
 }

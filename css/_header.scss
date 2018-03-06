@@ -17,19 +17,25 @@
 //     }
 //   }
 // }
-.header {
-  width: 90%;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 4.5em;
+}
+.header {
+  width: 100%;
+  padding-top: 2em;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
   &__logo {
     width: 30px;
     height: 30px;
     background-color: $black;
   }
   &__navigation {
-    width: 20%;
     text-align: right;
   }
   &__navigationItem {

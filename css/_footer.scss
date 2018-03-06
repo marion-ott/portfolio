@@ -1,0 +1,55 @@
+.footer {
+    margin: 0 auto;
+  &__divider {
+    width: 500px;
+    height: 3px;
+    background-color: $black;
+    margin-top: 200px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__leftSection {
+    width: 50%;
+    text-align: left;
+    margin-top: 70px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+  &__CTA {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $black;
+    text-decoration: none;
+    background-color: $yellow;
+    padding: 10px 20px;
+  }
+  &__rightSection {
+    width: 25%;
+    text-align: left;
+    margin-top: 70px;
+  }
+  &__externalLinks {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    background-color: $yellow;
+    display: inline-block;
+    line-height: 8px;
+    padding: 10px 25px 0 6px;
+  }
+  &__socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 9px;
+  }
+}
