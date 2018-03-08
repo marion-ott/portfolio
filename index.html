@@ -142,9 +142,9 @@
   window.addEventListener('scroll', function (event) {
     for (var i = 0; i < image.length; i++) {
       if ((image[i].offsetTop - window.innerHeight) < window.scrollY) {
-        var positionImg = window.scrollY * (-0.06);
+        var positionImg = window.scrollY * (-0.08);
         image[i].style.transform = 'translateY('+positionImg+'px)';
-        var positionTxt = window.scrollY * (-0.04);
+        var positionTxt = window.scrollY * (-0.05);
         text[i].style.transform = 'translateY('+positionTxt+'px)';
       }
     }
