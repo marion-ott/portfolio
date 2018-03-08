@@ -21,6 +21,15 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 4.5em;
+  @include large-screens() {
+    padding: 0 4em;
+  }
+  @include medium-screens() {
+    padding: 0 2em;
+  }
+  @include small-screens() {
+    padding: 0 1.7em;
+  }
 }
 .header {
   width: 100%;

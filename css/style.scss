@@ -1,4 +1,5 @@
 @import "reset";
+@import "mixins";
 @import "fonts";
 @import "variables";
 @import "header";
@@ -18,25 +19,43 @@ body {
     margin-top: 7em;
   }
   &__title1 {
-    font-size: 40px;
+    font-size: 3em;
     font-weight: 300;
     color: $white;
     background-color: $black;
     padding: 0.4em 1em 0.2em 0.4em;
     display: inline-block;
-  }
+    @include large-screens() {
+      font-size: 2.5em;
+    }
+    @include medium-screens() {
+      font-size: 2em;
+    }
+    @include small-screens() {
+      font-size: 7vw;
+    }
+    }
   &__title1::selection {
     background: none;
   }
   &__title2 {
     font-family: 'Harriet Display';
-    font-size: 70px;
+    font-size: 5em;
     font-weight: 500;
     letter-spacing: 3px;
     color: $white;
     background-color: $black;
-    padding: 0.1em 0.6em 0.3em 0.2em;
+    padding: 0.2em 0.6em 0.2em 0.2em;
     display: inline-block;
+    @include large-screens() {
+      font-size: 4em;
+    }
+    @include medium-screens() {
+      font-size: 3em;
+    }
+    @include small-screens() {
+      font-size: 10vw;
+    }
   }
   &__title2::selection {
     background: none;
@@ -49,6 +68,20 @@ body {
     line-height: 28px;
     letter-spacing: 0.3px;
     width: 60%;
+    @include large-screens() {
+      font-size: 1.2em;
+      width: 90%;
+    }
+    @include medium-screens() {
+      font-size: 1.2em;
+      line-height: 5.2vw;
+      width: 95%;
+    }
+    @include small-screens() {
+      font-size: 4vw;
+      line-height: 5.8vw;
+      width: 100%;
+    }
   }
   &__CTA {
     margin-top: 3.6em;
@@ -81,53 +114,43 @@ body {
 .projectSection {
   margin: 0 auto;
   &__projectContainer {
-    margin-top: 14em;
+    margin-top: 16em;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 28vw;
   }
   &__projectTextContainer {
-    width: 50%;
-    //margin-top: 5em;
+    width: 48%;
   }
   &__projectTitleContainer {
     position: relative;
     left: -12.5;
   }
   &__projectNumber {
-    font-family: 'Playfair';
-    font-size: 150px;
+    font-family: 'Harriet Display';
+    font-size: 22vw;
+    font-weight: 700;
     color: $black;
-    opacity: 0.1;
+    opacity: 0.03;
     text-align: left;
-    //margin-bottom: 2em;
     position: absolute;
     z-index: -1;
-    margin-left: -0.4em;
+    margin-top: -0.4em;
   }
-  // &__projectNumber:after {
-  //   content: '';
-  //   border: solid 1px $black;
-  //   width: 33px;
-  //   height: 33px;
-  //   position: absolute;
-  //   bottom: -12;
-  //   left: 27;
-  //   z-index: -1;
-  // }
   &__projectNumber::selection {
     background: none;
   }
   &__projectTitle {
-    font-family: 'Playfair';
-    font-size: 40px;
-    font-weight: 400;
+    font-family: 'Harriet Display';
+    font-size: 3.5vw;
+    font-weight: 600;
     letter-spacing: 0.2px;
     background-color: $yellow;
     display: inline-block;
-    line-height: 20px;
+    line-height: 1.5vw;
     padding: 0.3em 0.8em 0 0.3em;
-    margin-top: 3em;
+    margin-top: 1em;
   }
   &__projectTitle::selection {
     background: none;
@@ -135,7 +158,7 @@ body {
   &__projectRole {
     font-family: 'OpenSans', sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.3vw;
     font-weight: 200;
     letter-spacing: 0.3px;
     margin-top: 1.6em;
@@ -143,24 +166,52 @@ body {
   }
   &__projectDescription {
     font-family: 'OpenSans', sans-serif;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 200;
-    margin-top: 30px;
+    margin-top: 2em;
     width: 100%;
-    line-height: 23px;
+    line-height: 1.9vw;
+    margin-right: 5em;
+  }
+  &__projectLink {
+    display: inline-block;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+    text-decoration: none;
+    color: $black;
+    margin-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: ease 0.15s all;
+    position: relative;
   }
   &__projectImgContainer {
-    position: relative;
     width: 60%;
+    //overflow: hidden;
+    position: relative;
+    background-color: $backgroundColor;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffcb47' fill-opacity='0.82' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  &__projectImgBlock {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: ease 1s all;
   }
   &__projectImg {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
-  &__projectLinkContainer {
-    position: absolute;
-    display: none;
+  &__projectImgBlock:hover {
+    margin-top: 1.5em;
+    margin-left: 1.5em;
   }
 }
-.projectSection__projectTextContainer1 {
-  margin-left: 4em;
+
+.alignRight {
+  margin-right: 3vw;
+}
+.alignLeft {
+  margin-left: 3em;
 }

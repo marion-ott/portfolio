@@ -41,7 +41,7 @@
   </section>
   <section class="projectSection">
     <div class="projectSection__projectContainer">
-      <div class="projectSection__projectTextContainer">
+      <div class="projectSection__projectTextContainer alignRight">
         <div class="projectSection__projectTitleContainer">
           <h2 class="projectSection__projectNumber">01</h2>
           <h1 class="projectSection__projectTitle">Nespresso</h1>
@@ -54,25 +54,28 @@
           dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
           qui officia deserunt mollit anim id est laborum.</p>
+          <a class="projectSection__projectLink" href="">See the project →</a>
       </div>
-      <div class="projectSection__projectImgContainer">
-        <img class="projectSection__projectImg" src="img/IMG.png" alt="">
-      </div>
-      <div class="projectSection__projectLinkContainer">
-        <a href="" class="projectSection__projectLinkItem">→</a>
-      </div>
+        <div class="projectSection__projectImgContainer">
+          <div class="projectSection__projectImgBlock">
+            <a href="">
+              <img class="projectSection__projectImg" src="img/nespresso.jpg" alt="">
+            </a>
+          </div>
+        </div>
     </div>
   </section>
 
   <section class="projectSection">
     <div class="projectSection__projectContainer">
       <div class="projectSection__projectImgContainer">
-        <img class="projectSection__projectImg" src="img/IMG.png" alt="">
+        <div class="projectSection__projectImgBlock">
+          <a href="">
+            <img class="projectSection__projectImg" src="img/grabber.png" alt="">
+          </a>
+        </div>
       </div>
-      <div class="projectSection__projectLinkContainer">
-        <a href="" class="projectSection__projectLinkItem">→</a>
-      </div>
-      <div class="projectSection__projectTextContainer1">
+      <div class="projectSection__projectTextContainer alignLeft">
         <div class="projectSection__projectTitleContainer">
           <h2 class="projectSection__projectNumber">02</h2>
           <h1 class="projectSection__projectTitle">Grabber</h1>
@@ -81,12 +84,36 @@
         <p class="projectSection__projectDescription selection">Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a class="projectSection__projectLink" href="">See the project →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projectSection">
+    <div class="projectSection__projectContainer">
+      <div class="projectSection__projectTextContainer alignRight">
+        <div class="projectSection__projectTitleContainer">
+          <h2 class="projectSection__projectNumber">03</h2>
+          <h1 class="projectSection__projectTitle">Projet</h1>
+        </div>
+        <h3 class="projectSection__projectRole selection">WebDesigner & Front-End developper</h3>
+        <p class="projectSection__projectDescription selection">Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
           dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
           qui officia deserunt mollit anim id est laborum.</p>
+          <a class="projectSection__projectLink" href="">See the project →</a>
       </div>
-
+        <div class="projectSection__projectImgContainer">
+          <div class="projectSection__projectImgBlock">
+            <a href="">
+              <img class="projectSection__projectImg" src="img/IMG.png" alt="">
+            </a>
+          </div>
+        </div>
     </div>
   </section>
 
@@ -100,8 +127,8 @@
       <div class="footer__rightSection">
         <p class="footer__externalLinks">External links</p>
         <div class="footer__socialItems">
-          <a href="#github" class="footer__socialLink">GitHub</a>
-          <a href="#linkedin" class="footer__socialLink">LinkedIn</a>
+          <a href="https://github.com/marion-ott" class="footer__socialLink">GitHub</a>
+          <a href="https://www.linkedin.com/in/marionott/" class="footer__socialLink">LinkedIn</a>
         </div>
     </div>
 </div>
@@ -109,7 +136,7 @@
 </body>
 
 <script type="text/javascript">
-  var image = document.querySelectorAll('img');
+  var image = document.querySelectorAll('.projectSection__projectImgContainer');
   var text = document.querySelectorAll('.projectSection__projectTextContainer');
 
   window.addEventListener('scroll', function (event) {
@@ -117,19 +144,12 @@
       if ((image[i].offsetTop - window.innerHeight) < window.scrollY) {
         var positionImg = window.scrollY * (-0.06);
         image[i].style.transform = 'translateY('+positionImg+'px)';
-        var positionTxt = window.scrollY * (0.03);
+        var positionTxt = window.scrollY * (-0.04);
         text[i].style.transform = 'translateY('+positionTxt+'px)';
       }
     }
   });
 
-  // window.addEventListener('scroll', function (event) {
-  // if ((image.offsetTop - window.innerHeight) < window.scrollY) {
-  //   var positionImg = window.scrollY * (-0.06);
-  //   image.style.transform = 'translateY('+positionImg+'px)';
-  //   var positionTxt = window.scrollY * (0.03);
-  //   text.style.transform = 'translateY('+positionTxt+'px)';
-  // }
-  // });
 </script>
+
 </html>
