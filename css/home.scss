@@ -1,0 +1,115 @@
+.firstSection {
+  margin: 0 auto;
+  margin-bottom: 10em;
+  @include desktop() {
+    margin-bottom: 20em;
+  }
+  &__content {
+    text-align: left;
+    margin-top: 5em;
+  }
+  &__shapeContainer {
+    position: absolute;
+  }
+  &__shapeImg {
+    position: relative;
+    z-index: -1;
+    left: 0;
+    width: 85%;
+    transition: ease 3s all;
+    @include desktop() {
+      width: 100%;
+      left: 60;
+    }
+    @include tablet() {
+      width: 95%;
+      left: 20;
+    }
+  }
+  &__title1 {
+    font-size: 7vw;
+    font-weight: 300;
+    color: $white;
+    background-color: $black;
+    padding: 0.4em 1em 0.2em 0.4em;
+    margin-top: 1em;
+    display: inline-block;
+    @include tablet() {
+      font-size: 3.5em;
+    }
+    @include desktop() {
+      font-size: 3.5em;
+    }
+  }
+  &__title1::selection {
+    background: none;
+  }
+  &__title2 {
+    font-family: 'Harriet Display';
+    font-size: 10vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: $white;
+    background-color: $black;
+    padding: 0.2em 0.6em 0.2em 0.2em;
+    display: inline-block;
+    @include tablet() {
+      font-size: 5em;
+    }
+    @include desktop() {
+      font-size: 5em;
+    }
+  }
+  &__title2::selection {
+    background: none;
+  }
+  &__text {
+    font-family: 'Harriet Display';
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 2em;
+    line-height: 1.6em;
+    letter-spacing: 0.3px;
+    width: 100%;
+    z-index: 0;
+    @include tablet() {
+      font-size: 1.2em;
+      line-height: 3vw;
+      width: 95%;
+    }
+    @include desktop() {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      width: 80%;
+    }
+  }
+  &__CTA {
+    margin-top: 3.6em;
+    text-align: center;
+    @include tablet() {
+      text-align: left;
+    }
+    @include desktop() {
+      text-align: left;
+    }
+  }
+  &__CTAlink {
+    background-color: $black;
+    color: $white;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 5.8vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.6em 2em;
+    text-decoration: none;
+    @include tablet() {
+      font-size: 1.3em;
+      line-height: 5.2vw;
+    }
+    @include desktop() {
+      font-size: 1.3em;
+    }
+  }
+}

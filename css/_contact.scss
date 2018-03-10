@@ -1,0 +1,48 @@
+.contactSection {
+  background: $white;
+  width: 25em;
+  height: 32em;
+  margin: 4.2em 5em 0 10em;
+  border: solid 1px #F2F2F0;
+  @include tablet() {
+    width: 20em;
+    height: 26em;
+  }
+  &__textContainer {
+    text-align: right;
+    width: 55%;
+    float: right;
+    clear: both;
+    padding-right: 8em;
+    padding-top: 2em;
+  }
+  &__mainTitle {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 4em;
+    line-height: 1.1em;
+    letter-spacing: -2px;
+    display: inline-block;
+    margin-bottom: 0.6em;
+  }
+  &__mainSubtitle {
+    width: 100%;
+    font-family: 'Harriet Display';
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 1.5em;
+  }
+  &__contactsContainer {
+    margin-top: 2.8em;
+  }
+  &__contactsItems {
+    font-family: 'Harriet Display';
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: $black;
+    display: block;
+  }
+}

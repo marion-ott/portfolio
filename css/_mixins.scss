@@ -1,23 +1,23 @@
 @mixin tiny-screens() {
-  @media only screen and (max-width: 320px) {
+  @media only screen and (min-width: 320px) {
     @content;
   }
 }
 
 @mixin small-screens() {
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-width: 480px) {
     @content;
   }
 }
 
-@mixin medium-screens() {
-  @media only screen and (max-width: 680px) {
+@mixin tablet() {
+  @media (min-width: 768px) and (max-width: 1023px) {
     @content;
   }
 }
 
-@mixin large-screens() {
-  @media only screen and (max-width: 960px) {
+@mixin desktop() {
+  @media only screen and (min-width: 1024px) {
     @content;
   }
 }

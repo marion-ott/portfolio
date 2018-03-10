@@ -1,0 +1,164 @@
+.projectSection {
+  margin: 0 auto;
+  &__projectContainer {
+    margin-bottom: 0em;
+    width: 100%;
+    @include tablet() {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include desktop() {
+      display: flex;
+      justify-content: space-between;
+      height: 28vw;
+      margin-top: 15em;
+    }
+  }
+  &__projectTextContainer {
+    width: 90%;
+    margin-bottom: 3.5em;
+    padding-left: 0.8em;
+    @include tablet() {
+      width: 80%;
+    }
+    @include desktop() {
+      width: 50%;
+      margin-top: 2vw;
+    }
+  }
+  &__projectTitleContainer {
+    position: relative;
+    left: -12.5;
+    @include desktop() {
+      position: relative;
+      left: -12.5;
+    }
+  }
+  &__projectNumber {
+    font-family: 'Harriet Display';
+    font-size: 15em;
+    font-weight: 700;
+    color: $black;
+    opacity: 0.03;
+    text-align: left;
+    position: absolute;
+    z-index: -1;
+    margin-top: -0.3em;
+    @include desktop() {
+      font-size: 22vw;
+      margin-top: -0.4em;
+    }
+  }
+  &__projectNumber::selection {
+    background: none;
+  }
+  &__projectTitle {
+    font-family: 'Harriet Display';
+    font-size: 2.8em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    background-color: $yellow;
+    display: inline-block;
+    line-height: 0.4em;
+    padding: 0.3em 0.8em 0 0.3em;
+    margin-top: 1em;
+    @include desktop() {
+      font-size: 3.5vw;
+      line-height: 1.5vw;
+    }
+  }
+  &__projectTitle::selection {
+    background: none;
+  }
+  &__projectRole {
+    font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+    margin-top: 1.6em;
+    color: #898989;
+    @include desktop() {
+      font-size: 1.3vw;
+    }
+  }
+  &__projectDescription {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 2em;
+    width: 100%;
+    line-height: 1.6em;
+    @include tablet() {
+      position: absolute;
+      background: $backgroundColor;
+    }
+    @include desktop() {
+      font-size: 1.1em;
+      line-height: 1.9vw;
+    }
+  }
+  &__projectBackground {
+    width: 20em;
+    height: 20em;
+    bottom: -200;
+    right: -100;
+    z-index: -100;
+    position: absolute;
+    background-color: $backgroundColor;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffcb47' fill-opacity='0.82' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    @include tablet() {
+      display: none;
+      width: 25em;
+      height: 25em;
+      bottom: -300;
+      right: -300;
+    }
+    @include desktop() {
+      display: none;
+    }
+  }
+  &__projectLink {
+    display: none;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: ease 0.15s all;
+    position: relative;
+    @include desktop() {
+      display: inline-block;
+      font-size: 1.3vw;
+      font-weight: 300;
+      margin-top: 2em;
+      position: relative;
+    }
+  }
+  &__projectLink:hover {
+    color: $yellow;
+  }
+  &__projectImgContainer {
+    width: 100%;
+    position: relative;
+    margin: 1em auto 10em auto;
+    height: 50vw;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px 0.5px rgba(0, 0, 0, 0.1);
+    @include tablet() {
+      width: 100%;
+    }
+    @include desktop() {
+      width: 50%;
+      height: 100%;
+      margin-left: 4em;
+    }
+  }
+  &__projectImg {
+    width: 100%;
+    position: relative;
+  }
+}

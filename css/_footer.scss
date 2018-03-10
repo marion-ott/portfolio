@@ -1,19 +1,25 @@
 .footer {
     margin: 0 auto;
   &__divider {
-    width: 500px;
-    height: 1.5px;
+    width: 30%;
+    height: 2px;
     background-color: $black;
-    margin-top: 200px;
+    margin-top: 15em;
   }
   &__container {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 10em;
+    @include desktop() {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__leftSection {
-    width: 50%;
+    width: 100%;
     text-align: left;
-    margin-top: 70px;
+    margin-top: 5em;
+    @include desktop() {
+      width: 50%;
+    }
   }
   &__title {
     font-weight: 500;
@@ -34,19 +40,26 @@
     padding: 10px 20px;
   }
   &__rightSection {
-    width: 25%;
+    width: 100%;
     text-align: left;
-    margin-top: 70px;
+    margin-top: 8em;
+    @include desktop() {
+      margin-top: 5em;
+      width: 25%;
+    }
   }
   &__externalLinks {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2px;
     background-color: $yellow;
     display: inline-block;
-    line-height: 8px;
+    line-height: 0.4em;
     padding: 10px 25px 0 6px;
+    @include desktop() {
+      font-size: 1.5em;
+    }
   }
   &__externalLinks::selection {
     background: none;
