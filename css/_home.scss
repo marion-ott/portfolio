@@ -83,6 +83,14 @@
       width: 80%;
     }
   }
+  &__heticLink {
+    color: $yellow;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__strong {
+    font-weight: 500;
+  }
   &__CTA {
     margin-top: 3.6em;
     text-align: center;

@@ -26,3 +26,38 @@ body {
 .selection::selection {
   background: $yellow;
 }
+
+/* PROJECT TEST */
+.projectSectionTest {
+  margin: 0 auto;
+  &__projectContainer {
+    width: 100%;
+  }
+  &__projectImgContainer {
+    width: 50%;
+    position: relative;
+  }
+  &__projectNumber {
+    font-family: 'OpenSans';
+    font-weight: 600;
+    font-size: 100px;
+    position: absolute;
+    z-index: 10;
+    color: $yellow;
+    bottom: 30;
+    right: 0;
+  }
+  &__line {
+    position: absolute;
+    width: 7.2em;
+    height: 1.5em;
+    background-color: $yellow;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+  }
+  &__projectImg {
+    width: 100%;
+    position: relative;
+  }
+}

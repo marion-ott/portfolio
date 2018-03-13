@@ -21,3 +21,11 @@
     @content;
   }
 }
+
+@mixin boxFade($args...) {
+	animation: boxFade .5s ease-in-out $args 1 forwards;
+}
+
+@mixin transition($args) {
+	transition: all $args ease-in-out;
+}

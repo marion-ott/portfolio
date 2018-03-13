@@ -29,9 +29,9 @@
       <div>
         <h1 class="firstSection__title2">Marion Ott.</h1>
       </div>
-      <p class="firstSection__text selection">I'm a 27 years old front-end developper,
-      currently enrolled in a Bachelor Web @Hetic (Paris, France), I am looking for
-      an intership starting in July 2018 (3-months period). Have a look at a selection
+      <p class="firstSection__text selection">I'm a 27 years old <span class="firstSection__strong">front-end developper</span>,
+      currently enrolled in a Bachelor Web <a class="firstSection__heticLink" href="https://www.hetic.net/">@Hetic</a> (Paris, France), I am looking for
+      an <span class="firstSection__strong">intership</span> starting in July 2018 (3-months period) and an <span class="firstSection__strong">apprenticeship</span> for the following school year. Have a look at a selection
       of my projects, and feel free to drop me a message to get more information.</p>
       <div class="firstSection__CTA">
         <a class="firstSection__CTAlink" href="contact.html">Let's talk now !</a>
@@ -48,7 +48,7 @@
           <p class="projectSection__projectDescription selection">This is a personal redesign
           of Nespresso's website. I chose to minimise the navigation and enlarge the grid.
           The overall design was also changed to fit the upscale image of the company.</p>
-          <a class="projectSection__projectLink" href="">See the project →</a>
+          <!-- <a class="projectSection__projectLink" href="">See the project →</a> -->
         </div>
       </div>
       <div class="projectSection__projectImgContainer">
@@ -73,7 +73,7 @@
           I had to create a website 'elegant but urban'. I decided to imagine a service
           where users could rent longboard in the street. The front-end was done by Kévin,
           and I came up with the design.</p>
-          <a class="projectSection__projectLink" href="">See the project →</a>
+          <!-- <a class="projectSection__projectLink" href="">See the project →</a> -->
         </div>
       </div>
       <div class="projectSection__projectImgContainer">
@@ -97,7 +97,7 @@
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a class="projectSection__projectLink" href="">See the project →</a>
+          <!-- <a class="projectSection__projectLink" href="">See the project →</a> -->
         </div>
       </div>
       <div class="projectSection__projectImgContainer">
@@ -141,4 +141,9 @@
         }
       }
   });
+
+  function showIt() {
+  document.querySelector('.firstSection__title2').style.visibility = "visible";
+  }
+  setTimeout("showIt()", 2000);
 </script>
