@@ -389,23 +389,20 @@ table {
   .projectSection__projectImg:hover {
     opacity: 0.5; }
 
+body {
+  background-color: #000000; }
+
 .contactSection {
-  background: #FFFFFF;
-  width: 25em;
-  height: 32em;
-  margin: 4.2em 5em 0 10em;
-  border: solid 1px #F2F2F0; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .contactSection {
-      width: 20em;
-      height: 26em; } }
+  width: 100%;
+  height: 30em;
+  margin-top: 5em; }
+  .contactSection__left {
+    width: 30%; }
   .contactSection__textContainer {
     text-align: right;
-    width: 55%;
+    width: 70%;
     float: right;
-    clear: both;
-    padding-right: 8em;
-    padding-top: 2em; }
+    clear: both; }
   .contactSection__mainTitle {
     font-family: 'OpenSans';
     font-weight: 400;
