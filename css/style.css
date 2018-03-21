@@ -91,7 +91,7 @@ table {
       padding: 0 4em; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-      padding: 0 4em; } }
+      padding: 0 2em; } }
 
 .header {
   width: 100%;
@@ -433,6 +433,9 @@ body {
     text-decoration: none;
     color: #000000;
     display: block; }
+  .contactSection__phone {
+    text-decoration: none;
+    color: #000000; }
 
 .footer {
   margin: 0 auto; }
