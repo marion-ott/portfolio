@@ -366,7 +366,7 @@ table {
   .projectSection__projectLink:hover {
     color: #FFCB47; }
   .projectSection__projectImgContainer {
-    width: 90%;
+    width: 100%;
     position: relative;
     margin: 1em auto 10em auto;
     height: 50vw;
