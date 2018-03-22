@@ -318,14 +318,17 @@ table {
     margin-top: 2em;
     width: 100%;
     line-height: 1.6em; }
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .projectSection__projectDescription {
-        position: absolute;
-        background: #FEFCF7; } }
     @media only screen and (min-width: 1024px) {
       .projectSection__projectDescription {
         font-size: 1.1em;
         line-height: 1.9vw; } }
+  .projectSection__largerScreenWarning {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 1em; }
+    @media only screen and (min-width: 1024px) {
+      .projectSection__largerScreenWarning {
+        display: none; } }
   .projectSection__projectBackground {
     width: 20em;
     height: 20em;
@@ -382,6 +385,15 @@ table {
         width: 50%;
         height: 100%;
         margin-left: 4em; } }
+  .projectSection__projectToolsContainer {
+    margin-top: 1.5em;
+    display: flex; }
+  .projectSection__projectToolsItems {
+    font-size: 14px;
+    background-color: #FFCB47;
+    border-radius: 2px;
+    padding: 0.3em 0.5em;
+    margin-right: 1em; }
   .projectSection__projectImg {
     width: 100%;
     position: relative;
