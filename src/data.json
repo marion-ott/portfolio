@@ -1,0 +1,48 @@
+{
+    "introduction": {
+        "title": "<span className='name'>Marion Ott,</span><br> Front-end developer",
+        "text": "I'm a 28 years old <strong>front-end developer</strong>, currently enrolled in a Bachelor Web <a href=''>@Hetic</a> (Paris, France). I specialize in JavaScript, trying to master the art of <strong>React</strong>. Have a look at a selection of my projects, and feel free to drop me a message to get more information."
+    },
+    "projects": [
+        {
+            "title": "Nespresso",
+            "url": "https://marion-ott.github.io/nespresso_design/",
+            "role": "Webdesigner & Front-end developer",
+            "img": "/assets/img/nespresso.png",
+            "desc": "This is a personal redesign of Nespresso's website. I chose to minimise the navigation and enlarge the grid. The overall design was also changed to fit the upscale image of the company.",
+            "skills": [
+                "HTML/CSS",
+                "Javascript"
+            ]
+        },
+        {
+            "title": "Grabber",
+            "url": "https://rayzors.github.io/semaineIntensive_1/",
+            "role": "Webdesigner & Integrator",
+            "img": "/assets/img/grabber.png",
+            "desc": "As a school assignment, I had to create a website 'elegant but urban'. I decided to imagine a service where users could rent longboard on the spot. The front-end was done by <a target='_blank' href='https://github.com/Rayzors'>Kévin Manssat</a>, and I created the design.",
+            "skills": [
+                "Sketch",
+                "Photoshop",
+                "HTML/CSS"
+            ]
+        },
+        {
+            "title": "Substudio",
+            "url": "https://marion-ott.github.io/streaming_platform/",
+            "role": "Webdesigner & Front-end developer",
+            "img": "/assets/img/substudio.png",
+            "desc": "As another school assignement, we were asked to create a streaming platform for fan movies. The whole interface is dynamic using a JavaScript object. I also designed the website, but chose to keep it simple as we had only a few days to complete the challenge.",
+            "skills": [
+                "HTML/CSS",
+                "Javascript"
+            ]
+        }
+    ],
+    "contact": {
+        "title": "",
+        "text": "",
+        "email": "",
+        "phone": ""
+    }
+}

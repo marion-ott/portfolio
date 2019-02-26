@@ -1,0 +1,29 @@
+// Responsive
+$xs-mobile: 320px;
+$mobile: 600px;
+$tablet: 900px;
+$laptop: 1200px;
+
+
+@mixin xs-mobile() { @media screen and (max-width:$xs-mobile) { @content; } } 
+@mixin mobile() { @media screen and (max-width:$mobile) { @content; } } 
+@mixin tablet() { @media screen and (max-width:$tablet) { @content; } } 
+@mixin laptop() { @media screen and (max-width:$laptop) { @content; } }
+
+// Variables 
+$black: #000000;
+$white: #FFFFFF;
+$yellow: #FFCB47;
+$backgroundColor: #FEFCF7;
+
+
+/** FORMULE CALCUL FLUID FONT
+
+** $minFontSize : taille minimum de la font (px)
+** $maxFontSize : taille maximum de la font (px)
+** $minScreenSize : taille écran minimum à partir de laquelle la taille MINIMUM prend le dessus (px)
+** $maxScreenSize : taille écran minimum à partir de laquelle la taille MAXIMUM prend le dessus (px)
+
+font-size: calc($minFontSize + ($maxFontSize - $minFrontSize) * ((100vw - $minScreenSize) / ($maxScreenSize - $minScreenSize));
+
+**/
